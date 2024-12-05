@@ -1,0 +1,117 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Cuadro centrado para el formulario de login con borde negro */
+.login-container {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #000; /* Borde negro */
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-logo {
+    position: absolute;
+    top: 10px;
+    right: 30px; 
+    width: 150px;
+    height: 150px;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+label {
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="button"] {
+    background-color: #007bff;
+    color: white;
+}
+
+button[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="button"]:last-child {
+    background-color: #dc3545;
+}
+
+button[type="button"]:last-child:hover {
+    background-color: #c82333;
+}
+
+/* Mensaje de registro debajo del cuadro */
+.register-message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.register-message a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-message a:hover {
+    text-decoration: underline;
+}

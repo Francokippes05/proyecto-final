@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <img src="chacabuco.jpg" alt="Logo del equipo" class="form-logo">
+
+        <form id="login-form">
+            <label for="username">Usuario</label>
+            <input type="text" id="username" name="username" maxlength="15" placeholder="Ingrese su usuario" required>
+            
+            <label for="password">Clave</label>
+            <input type="password" id="password" name="password" maxlength="15" placeholder="Ingrese su clave" required>
+            
+            <div class="button-container">
+                <button type="button" onclick="handleLogin()">Ingresar</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </form>
+    </div>
+    <p class="register-message">
+        ¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a>.
+    </p>
+
+    <footer>
+        <hr>
+        <p>Franco Kippes 6°7 | E.E.ST. N°6 - CHACABUCO MORÓN</p>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>
